@@ -10,14 +10,18 @@ export default function Dashboard() {
       </Grid>
       <Grid container item spacing={2} justify="center">
         <Grid item>
-          <StatusCounts active={20} />
+          <StatusCounts
+            active={20}
+            queued={3}
+            onHold={5}
+          />
         </Grid>
         <Grid item>
           <div style={{ height: '50px', width: '100px', background: 'lightblue' }}>Upload Button</div>
         </Grid>
       </Grid>
       <Grid item>
-        <hr style={{ height: '2px', backgroundColor: 'darkblue', color: 'darkblue' }} />
+        <hr style={{ height: '2px', backgroundColor: 'blue', color: 'blue', width: '90%' }} />
       </Grid>
     </Grid>
   );

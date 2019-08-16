@@ -4,11 +4,22 @@ import { Grid } from '@material-ui/core';
 
 import StatusCard from '../StatusCard/StatusCard';
 
-export default function StatusCounts({ active }) {
+export default function StatusCounts({ active, queued, onHold }) {
+  const total = active + queued + onHold;
+
   return (
-    <Grid container>
+    <Grid container spacing={10}>
       <Grid item>
         <StatusCard label="Active" value={active} />
+      </Grid>
+      <Grid item>
+        <StatusCard label="Queued" value={queued} />
+      </Grid>
+      <Grid item>
+        <StatusCard label="On Hold" value={onHold} />
+      </Grid>
+      <Grid item>
+        <StatusCard label="Total" value={total} />
       </Grid>
     </Grid>
   );
@@ -16,4 +27,6 @@ export default function StatusCounts({ active }) {
 
 StatusCounts.propTypes = {
   active: PropTypes.number.isRequired,
+  queued: PropTypes.number.isRequired,
+  onHold: PropTypes.number.isRequired,
 };
