@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import StatusCounts from '../../components/StatusCounts/StatusCounts';
 
 export default function Dashboard() {
   return (
@@ -9,7 +10,7 @@ export default function Dashboard() {
       </Grid>
       <Grid container item spacing={2} justify="center">
         <Grid item>
-          <div style={{ height: '150px', width: '600px', background: 'lightblue' }}>Numbers</div>
+          <StatusCounts active={20} />
         </Grid>
         <Grid item>
           <div style={{ height: '50px', width: '100px', background: 'lightblue' }}>Upload Button</div>
