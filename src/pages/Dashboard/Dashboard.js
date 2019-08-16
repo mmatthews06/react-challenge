@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import StatusCounts from '../../components/StatusCounts/StatusCounts';
 import UploadButton from '../../components/UploadButton/UploadButton';
+import SamplePieChart from '../../components/SamplePieChart/SamplePieChart';
 
 export default function Dashboard() {
   const [samples, setSamples] = useState([]);
@@ -28,6 +29,15 @@ export default function Dashboard() {
       </Grid>
       <Grid item>
         <hr style={{ height: '2px', backgroundColor: 'blue', color: 'blue', width: '90%' }} />
+      </Grid>
+      <Grid container item spacing={5} justify="center" alignItems="center" style={{ height: '500px', width: '500px' }}>
+        <Grid item style={{ height: '100%', width: '100%' }}>
+          <SamplePieChart
+            active={activeCount}
+            queued={queuedCount}
+            onHold={onHoldCount}
+          />
+        </Grid>
       </Grid>
     </Grid>
   );
