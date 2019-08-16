@@ -4,6 +4,7 @@ exports[`Dashboard should match a snapshot 1`] = `
 <WithStyles(ForwardRef(Grid))
   container={true}
   direction="column"
+  justify="center"
   spacing={2}
 >
   <WithStyles(ForwardRef(Grid))
@@ -14,34 +15,27 @@ exports[`Dashboard should match a snapshot 1`] = `
     </h2>
   </WithStyles(ForwardRef(Grid))>
   <WithStyles(ForwardRef(Grid))
+    alignItems="center"
     container={true}
     item={true}
     justify="center"
-    spacing={2}
+    spacing={5}
   >
     <WithStyles(ForwardRef(Grid))
       item={true}
     >
       <StatusCounts
-        active={20}
-        onHold={5}
-        queued={3}
+        active={0}
+        onHold={0}
+        queued={0}
       />
     </WithStyles(ForwardRef(Grid))>
     <WithStyles(ForwardRef(Grid))
       item={true}
     >
-      <div
-        style={
-          Object {
-            "background": "lightblue",
-            "height": "50px",
-            "width": "100px",
-          }
-        }
-      >
-        Upload Button
-      </div>
+      <UploadButton
+        setSamples={[Function]}
+      />
     </WithStyles(ForwardRef(Grid))>
   </WithStyles(ForwardRef(Grid))>
   <WithStyles(ForwardRef(Grid))

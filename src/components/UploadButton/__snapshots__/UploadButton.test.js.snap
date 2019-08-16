@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UploadButton should match a snapshot 1`] = `
+<label
+  htmlFor="contained-button-file"
+  id="upload-samples"
+>
+  <input
+    accept=".csv"
+    hidden={true}
+    id="contained-button-file"
+    onChange={[Function]}
+    type="file"
+    value=""
+  />
+  <WithStyles(ForwardRef(Button))
+    color="primary"
+    component="span"
+    variant="contained"
+  >
+    Upload Samples
+  </WithStyles(ForwardRef(Button))>
+</label>
+`;
