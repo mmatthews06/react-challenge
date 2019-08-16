@@ -2,10 +2,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from './App';
+import Dashboard from './Dashboard';
 
-describe('App', () => {
+describe('Dashboard', () => {
   it('should match a snapshot', () => {
-    expect(shallow(<App />)).toMatchSnapshot();
+    expect(shallow(<Dashboard />)).toMatchSnapshot();
   });
 });

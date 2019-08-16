@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match a snapshot 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(AppBar))
+    position="static"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <WithStyles(ForwardRef(IconButton))
+        className="makeStyles-menuButton-2"
+        edge="start"
+      >
+        <MenuIcon
+          className="makeStyles-menuItem-4"
+          fontSize="large"
+        />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-title-3"
+        variant="h6"
+      >
+        Q2 Solutions
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Button))>
+        <PersonIcon
+          className="makeStyles-menuItem-4"
+          fontSize="large"
+        />
+      </WithStyles(ForwardRef(Button))>
+      <span
+        className="makeStyles-menuItem-4"
+      >
+        q12355@quintiles.net
+      </span>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+  <div
+    className="makeStyles-content-5"
+  >
+    <Dashboard />
+  </div>
+</div>
+`;
