@@ -52,5 +52,40 @@ exports[`Dashboard should match a snapshot 1`] = `
       }
     />
   </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    item={true}
+    justify="center"
+    spacing={5}
+  >
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      direction="column"
+      item={true}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+      >
+        <h2>
+          Run Progress
+        </h2>
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        style={
+          Object {
+            "height": "500px",
+            "width": "500px",
+          }
+        }
+      >
+        <SamplePieChart
+          active={0}
+          onHold={0}
+          queued={0}
+        />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
 </WithStyles(ForwardRef(Grid))>
 `;
