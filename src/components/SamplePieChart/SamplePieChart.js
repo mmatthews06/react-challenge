@@ -16,7 +16,7 @@ export default function SamplePieChart({ active, queued, onHold }) {
   ];
 
   if (total === 0) {
-    return <span>No data to show!</span>
+    return <span>No data to show!</span>;
   }
 
   return (
