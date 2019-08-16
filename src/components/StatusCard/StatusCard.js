@@ -19,7 +19,7 @@ const useStyles = makeStyles(() => ({
 export default function Status({ label, value }) {
   const classes = useStyles();
   return (
-    <Grid container direction="column" spacing={1} justify="center">
+    <Grid container direction="column" spacing={0} justify="center" alignItems="center">
       <Grid item>
         <Typography variant="overline" className={classes.status}>
           {label}

@@ -1,3 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StatusCard should match a snapshot 1`] = `ShallowWrapper {}`;
+exports[`StatusCard should match a snapshot 1`] = `
+<WithStyles(ForwardRef(Grid))
+  container={true}
+  spacing={10}
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <Status
+      label="Active"
+      value={20}
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <Status
+      label="Queued"
+      value={5}
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <Status
+      label="On Hold"
+      value={3}
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <Status
+      label="Total"
+      value={28}
+    />
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

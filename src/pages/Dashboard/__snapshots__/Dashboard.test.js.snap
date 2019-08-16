@@ -1,3 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dashboard should match a snapshot 1`] = `ShallowWrapper {}`;
+exports[`Dashboard should match a snapshot 1`] = `
+<WithStyles(ForwardRef(Grid))
+  container={true}
+  direction="column"
+  spacing={2}
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <h2>
+      Dashboard
+    </h2>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    item={true}
+    justify="center"
+    spacing={2}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+    >
+      <StatusCounts
+        active={20}
+        onHold={5}
+        queued={3}
+      />
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+    >
+      <div
+        style={
+          Object {
+            "background": "lightblue",
+            "height": "50px",
+            "width": "100px",
+          }
+        }
+      >
+        Upload Button
+      </div>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <hr
+      style={
+        Object {
+          "backgroundColor": "blue",
+          "color": "blue",
+          "height": "2px",
+          "width": "90%",
+        }
+      }
+    />
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;
