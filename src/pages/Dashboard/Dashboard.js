@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import StatusCounts from '../../components/StatusCounts/StatusCounts';
 import UploadButton from '../../components/UploadButton/UploadButton';
 import SamplePieChart from '../../components/SamplePieChart/SamplePieChart';
+import SampleTable from '../../components/SampleTable/SampleTable';
 
 export default function Dashboard() {
   const [samples, setSamples] = useState([]);
@@ -12,7 +13,7 @@ export default function Dashboard() {
 
   return (
     <Grid container direction="column" spacing={2} justify="center">
-      <Grid item>
+      <Grid item sm>
         <h2>Dashboard</h2>
       </Grid>
       <Grid container item spacing={5} justify="center" alignItems="center">
@@ -30,8 +31,8 @@ export default function Dashboard() {
       <Grid item>
         <hr style={{ height: '2px', backgroundColor: 'blue', color: 'blue', width: '90%' }} />
       </Grid>
-      <Grid container item spacing={5} justify="center">
-        <Grid container item direction="column">
+      <Grid container item justify="center" direction="row" style={{ height: '500px ' }}>
+        <Grid container item direction="column" sm={6}>
           <Grid item>
             <h2>Run Progress</h2>
           </Grid>
@@ -41,6 +42,14 @@ export default function Dashboard() {
               queued={queuedCount}
               onHold={onHoldCount}
             />
+          </Grid>
+        </Grid>
+        <Grid container item direction="column" sm={6}>
+          <Grid item>
+            <h2>List of Active Sample Sets / Batches</h2>
+          </Grid>
+          <Grid item>
+            <SampleTable samples={samples} />
           </Grid>
         </Grid>
       </Grid>

@@ -9,6 +9,7 @@ exports[`Dashboard should match a snapshot 1`] = `
 >
   <WithStyles(ForwardRef(Grid))
     item={true}
+    sm={true}
   >
     <h2>
       Dashboard
@@ -54,14 +55,20 @@ exports[`Dashboard should match a snapshot 1`] = `
   </WithStyles(ForwardRef(Grid))>
   <WithStyles(ForwardRef(Grid))
     container={true}
+    direction="row"
     item={true}
     justify="center"
-    spacing={5}
+    style={
+      Object {
+        "height": "500px ",
+      }
+    }
   >
     <WithStyles(ForwardRef(Grid))
       container={true}
       direction="column"
       item={true}
+      sm={6}
     >
       <WithStyles(ForwardRef(Grid))
         item={true}
@@ -83,6 +90,27 @@ exports[`Dashboard should match a snapshot 1`] = `
           active={0}
           onHold={0}
           queued={0}
+        />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      direction="column"
+      item={true}
+      sm={6}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+      >
+        <h2>
+          List of Active Sample Sets / Batches
+        </h2>
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+      >
+        <SampleTable
+          samples={Array []}
         />
       </WithStyles(ForwardRef(Grid))>
     </WithStyles(ForwardRef(Grid))>
