@@ -8,6 +8,8 @@ import PersonIcon from '@material-ui/icons/Person';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
+import Dashboard from './pages/Dashboard/Dashboard';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -20,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
   },
   menuItem: {
     color: 'white',
+  },
+  content: {
+    padding: '25px 25px 25px 25px',
   },
 }));
 
@@ -43,6 +48,9 @@ function App() {
           </span>
         </Toolbar>
       </AppBar>
+      <div className={classes.content}>
+        <Dashboard />
+      </div>
     </div>
   );
 }
