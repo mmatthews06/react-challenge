@@ -2,10 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
+  Cell,
+  Legend,
   ResponsiveContainer,
   Pie,
   PieChart,
 } from 'recharts';
+
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
 export default function SamplePieChart({ active, queued, onHold }) {
   const total = active + queued + onHold;
@@ -29,7 +33,12 @@ export default function SamplePieChart({ active, queued, onHold }) {
           innerRadius="50%"
           fill="#8884d8"
           label
-        />
+        >
+          {
+            data.map((entry, index) => <Cell key={`cell-${entry.label}`} fill={COLORS[index % COLORS.length]} />)
+          }
+        </Pie>
+        <Legend verticalAlign="top" />
       </PieChart>
     </ResponsiveContainer>
   );

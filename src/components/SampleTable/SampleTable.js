@@ -22,8 +22,8 @@ export default function SampleTable({ samples }) {
           {samples.map((sample) => (
             <TableRow key={sample.ID}>
               <TableCell align="right">{sample['Sample Number']}</TableCell>
-              <TableCell align="right">{sample.Type}</TableCell>
-              <TableCell align="right">{sample.ID}</TableCell>
+              <TableCell align="center">{sample.Type}</TableCell>
+              <TableCell align="center">{sample.ID}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -35,5 +35,7 @@ export default function SampleTable({ samples }) {
 SampleTable.propTypes = {
   samples: PropTypes.arrayOf(PropTypes.shape({
     'Sample Number': PropTypes.number,
+    Type: PropTypes.string,
+    ID: PropTypes.string,
   })).isRequired,
 };
