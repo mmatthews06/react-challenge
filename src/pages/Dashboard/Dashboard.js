@@ -30,13 +30,18 @@ export default function Dashboard() {
       <Grid item>
         <hr style={{ height: '2px', backgroundColor: 'blue', color: 'blue', width: '90%' }} />
       </Grid>
-      <Grid container item spacing={5} justify="center" alignItems="center" style={{ height: '500px', width: '500px' }}>
-        <Grid item style={{ height: '100%', width: '100%' }}>
-          <SamplePieChart
-            active={activeCount}
-            queued={queuedCount}
-            onHold={onHoldCount}
-          />
+      <Grid container item spacing={5} justify="center">
+        <Grid container item direction="column">
+          <Grid item>
+            <h2>Run Progress</h2>
+          </Grid>
+          <Grid item style={{ height: '500px', width: '500px' }}>
+            <SamplePieChart
+              active={activeCount}
+              queued={queuedCount}
+              onHold={onHoldCount}
+            />
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
