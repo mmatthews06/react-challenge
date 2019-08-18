@@ -65,6 +65,25 @@ exports[`SamplePieChart should match a snapshot 1`] = `
       paddingAngle={0}
       startAngle={0}
       stroke="#fff"
+    >
+      <Cell
+        fill="#0088FE"
+        key="cell-Active"
+      />
+      <Cell
+        fill="#00C49F"
+        key="cell-Queued"
+      />
+      <Cell
+        fill="#FFBB28"
+        key="cell-Active"
+      />
+    </Pie>
+    <Legend
+      align="center"
+      iconSize={14}
+      layout="horizontal"
+      verticalAlign="top"
     />
   </PieChart>
 </ResponsiveContainer>
