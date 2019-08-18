@@ -32,12 +32,12 @@ exports[`SampleTable should match a snapshot 1`] = `
           1
         </WithStyles(ForwardRef(TableCell))>
         <WithStyles(ForwardRef(TableCell))
-          align="right"
+          align="center"
         >
           client
         </WithStyles(ForwardRef(TableCell))>
         <WithStyles(ForwardRef(TableCell))
-          align="right"
+          align="center"
         >
           ABC1234
         </WithStyles(ForwardRef(TableCell))>
@@ -51,12 +51,12 @@ exports[`SampleTable should match a snapshot 1`] = `
           2
         </WithStyles(ForwardRef(TableCell))>
         <WithStyles(ForwardRef(TableCell))
-          align="right"
+          align="center"
         >
           job
         </WithStyles(ForwardRef(TableCell))>
         <WithStyles(ForwardRef(TableCell))
-          align="right"
+          align="center"
         >
           DEF4567
         </WithStyles(ForwardRef(TableCell))>
