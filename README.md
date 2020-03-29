@@ -1,4 +1,4 @@
-# Q2 Coding Challenge
+# Simple Coding Experiment/Challenge
 This is one functional solution for the coding challenge - except it's in React.
 
 # Install and Run
