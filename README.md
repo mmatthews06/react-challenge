@@ -1,5 +1,5 @@
 # Simple Coding Experiment/Challenge
-This is a web app coding challenge that I came up with for my company. It's an example of React, with hook, and excellent testing, done in 5 hours, so it purposely lacks some visual polish.
+This is a web app coding challenge that I came up with for my company. It's an example of React, with hooks, and excellent testing, done in 5 hours, so it purposely lacks some visual polish.
 
 # Install and Run
 1. Make sure you have Node.js installed. This was developed with v12.8.0
